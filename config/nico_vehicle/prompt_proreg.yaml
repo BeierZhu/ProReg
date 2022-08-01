@@ -1,0 +1,13 @@
+data_root: /data1/nico_arrow_vehicle/
+num_gpus: 4
+num_nodes: 1 
+per_gpu_batchsize: 16
+finetune_mode: prompt_proreg
+alpha: 0.5
+T: 1
+num_workers: 0
+backbone_name: ViT-B/32
+label_size: 9
+
+classname_path: weights/NICO_vehicle.txt
+prompt_template: this is

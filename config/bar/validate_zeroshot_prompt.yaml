@@ -1,0 +1,10 @@
+data_root: /data1/bar_arrow/bar_arrow_100/
+num_gpus: 1
+num_nodes: 1 
+per_gpu_batchsize: 64
+validate_only: True
+finetune_mode: prompt_finetune
+backbone_name: ViT-B/32
+
+classname_path: weights/BAR.txt
+prompt_template: the man is 

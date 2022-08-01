@@ -1,0 +1,11 @@
+data_root: /data1/bar_arrow/bar_arrow_100/
+num_gpus: 4
+num_nodes: 1 
+per_gpu_batchsize: 16
+load_path: weights/bar100/promptless_finetune.ckpt
+finetune_mode: promptless_finetune
+num_workers: 0
+validate_only: True
+
+classname2idx: weights/bert_to_BAR.txt
+question_template: what is the sport?

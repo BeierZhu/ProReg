@@ -1,0 +1,17 @@
+data_root: /data4/pacs_arrow/
+num_gpus: 4
+num_nodes: 1 
+per_gpu_batchsize: 16
+backbone_name: ViT-B/32
+finetune_mode: prompt_proreg
+num_workers: 0
+alpha: 2
+gamma: 1
+kd_loss: xERM
+# test_domain: sketch
+# test_domain: cartoon
+test_domain: art_painting
+# test_domain: photo
+
+classname_path: weights/PACS.txt
+prompt_template: this is
